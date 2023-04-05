@@ -1,0 +1,9 @@
+{% load static %}
+{% load dashboard_widgets %}
+
+<link rel="stylesheet" href="{% static 'widget.css' %}">
+<div class="widget">
+   {% for card in cards %}
+        {% dashboard_card card %}
+    {% endfor %}
+</div>
