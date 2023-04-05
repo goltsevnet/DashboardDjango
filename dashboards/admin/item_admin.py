@@ -4,4 +4,7 @@ from dashboards.models import Item
 
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
-    list_display = ("name", "user")
+    list_display = ("_name", "user")
+
+    def _name(self, obj):
+        return f"{obj.name[:25]}..."

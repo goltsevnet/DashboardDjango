@@ -2,15 +2,12 @@
 name = "dashboarddjango"
 version = "0.1.0"
 description = ""
-authors = ["darkdealnet <real@darkdeal.net>"]
+authors = ["goltsev.net <mark@goltsev.net>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 django = "^4.2"
-model-bakery = "^1.10.3"
-tqdm = "^4.65.0"
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"

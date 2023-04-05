@@ -52,10 +52,6 @@ class UserManager(BaseUserManager):
         return user
 
 
-def upload_to(instance, filename):
-    return "user_image/%s/avatars/%s" % (instance.slug, filename)
-
-
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(verbose_name=_("email address"), max_length=255, unique=True)
     # password field supplied by AbstractBaseUser
