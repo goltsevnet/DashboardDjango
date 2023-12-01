@@ -22,7 +22,7 @@ class UserAdmin(admin.ModelAdmin):
         "is_staff",
     )
 
-    def groups_display(self, obj):
+    def groups_display(self, obj: User):
         return [group.name for group in obj.groups.all()]
 
     groups_display.short_description = "groups"
